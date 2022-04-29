@@ -11,15 +11,16 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 # Compiled class file
 *.class
-
+.project
 # Log file
 *.log
-
+.settings
 # Intellij
 .idea/
 *.iml
 *.iws
-
+.classpath
+.factorypath
 # Mac
 .DS_Store
 

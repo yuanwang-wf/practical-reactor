@@ -30,7 +30,7 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author Stefan Dragisic
  */
-public class c1_Introduction extends IntroductionBase {
+public class c1_IntroductionTest extends IntroductionBase {
 
     /**
      * Every journey starts with Hello World!
@@ -41,7 +41,7 @@ public class c1_Introduction extends IntroductionBase {
     public void hello_world() {
         Mono<String> serviceResult = hello_world_service();
 
-        String result = null; //todo: change this line only
+        String result = serviceResult.block();
 
         assertEquals("Hello World!", result);
     }
